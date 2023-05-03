@@ -1,0 +1,109 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: 'Gill Sans', 'Trebuchet MS', 'Lucida Sans Unicode';
+  background-color: rgb(48, 26, 8);  
+}  
+.container {  
+    padding: 50px;  
+  background-color: rgb(108, 87, 59);  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: lightgoldenrodyellow;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.text {
+  background-color: rgb(79, 59, 14);
+  color: darkgoldenrod;
+  font-size: 10vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 30%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+    <div class="text">COFFEE SHOP</div>
+<img src="images/coffee.jpg" width="400" height="200" class="center"> <br>
+  <label> Please Enter your Name </label>   
+<input type="text" name="name" placeholder= "name" size="15" required />     
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>    
+<div>  
+<label>   
+Coffee Cup Size :  
+</label>   
+<select>  
+<option value="Cup Size">Cup Size</option>  
+<option value="Small">Small</option>  
+<option value="Medium">Medium</option>  
+<option value="Large">Large</option>   
+</select>  
+</div>  
+<div>  
+<label>   
+Milk Prefrences :  
+</label><br>  
+<input type="radio" value="Cow Milk" name="gender" checked > Cow Milk  
+<input type="radio" value="Oat Milk" name="gender"> Oat Milk 
+<input type="radio" value="Almond Milk" name="gender"> Almond Milk 
+</div>  
+Special Instructions to Barista :  
+<textarea cols="70" rows="3" placeholder="Enter Instructions" value="Instructions" required>  
+</textarea>  
+ 
+<button type="submit" class="Place my Ordertn">Place my Order</button>    
+</form>  
+</body>  
+</html>  

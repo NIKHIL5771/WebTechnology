@@ -1,0 +1,114 @@
+body {
+    background-color: #f1c9e9;
+}
+h1 {
+    font-size: 36px;
+    color: #245609;
+    text-align: center;
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #04104a;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #7daddd;
+    color: rgb(222, 226, 237);
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #181103;
+    border-radius: 4px;
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    width: 200px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border: 2px solid #555;
+}
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-container h3 {
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.form-container input[type="submit"] {
+    width: 50%;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    background-color: #23629a; /* Forest green */
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.delete-button {
+    background-color: #ad5353; /* Red */
+    color: rgb(250, 247, 247);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.update-button {
+    background-color: #ff8c00; /* Dark orange */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header {
+    background-color: #490c3e; /* Deep Sky Blue */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.footer {
+    background-color: #4a103f; /* Forest Green */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+

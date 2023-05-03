@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Bind Click Event to Dynamically added Elements</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("ol").append("<li>list item <a href='javascript:void(0);' class='remove'>×</a></li>"); 
+        });
+        $(document).on("click", "a.remove" , function() {
+            $(this).parent().remove();
+        });
+    });
+</script>
+</head>
+<body>
+    <button>Add new list item</button>
+    <p>Click the above button to dynamically add new list items. You can remove it later.</p>
+    <ol>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ol>
+</body> 
+</html>
